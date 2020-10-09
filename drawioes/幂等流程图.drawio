@@ -1,19 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2020-10-09T06:30:12.875Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36" etag="teCInAIanvC5h3Y3OA80" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-09T06:58:50.677Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36" etag="wZOblULQMiYrelh1WVGW" version="13.7.9" type="github">
   <diagram name="幂等" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="1690" dy="1012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Dr7aWHiYQWJMJAfqMdh1-1" value="@Idempotent(幂等注解)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+        <mxCell id="Dr7aWHiYQWJMJAfqMdh1-1" value="@Idempotent(注解类)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
           <mxGeometry x="40" y="425" width="250" height="185" as="geometry" />
         </mxCell>
         <mxCell id="Dr7aWHiYQWJMJAfqMdh1-2" value="business: 业务ID&#xa;key: 唯一标识(配合business,全局唯一)&#xa;requestTime: 请求时间(yyyyMMddhhmmss)&#xa;persistence: 是否持久化到DB&#xa;expireTime: 过期时间&#xa;timeUnit 存储时间单位&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="Dr7aWHiYQWJMJAfqMdh1-1" vertex="1">
           <mxGeometry y="30" width="250" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="Dr7aWHiYQWJMJAfqMdh1-3" value="Idempotent(幂等配置类)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+        <mxCell id="Dr7aWHiYQWJMJAfqMdh1-3" value="IdempotentProperties(配置类)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
           <mxGeometry x="40" y="80" width="250" height="190" as="geometry" />
         </mxCell>
         <mxCell id="Dr7aWHiYQWJMJAfqMdh1-4" value="business: 业务ID&#xa;key: 唯一标识(配合business,全局唯一)&#xa;requestTime: 请求时间(yyyyMMddhhmmss)&#xa;persistence: 是否持久化到DB&#xa;expireTime: 过期时间&#xa;timeUnit 存储时间单位&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="Dr7aWHiYQWJMJAfqMdh1-3" vertex="1">
+          <mxGeometry y="30" width="250" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oFsb0zca_vRXjRVCQ4-1" value="Idempotent(接口类)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="510" y="80" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="N3oFsb0zca_vRXjRVCQ4-2" value="business: 业务ID&#xa;key: 唯一标识(配合business,全局唯一)&#xa;requestTime: 请求时间(yyyyMMddhhmmss)&#xa;persistence: 是否持久化到DB&#xa;expireTime: 过期时间&#xa;timeUnit 存储时间单位&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="N3oFsb0zca_vRXjRVCQ4-1">
           <mxGeometry y="30" width="250" height="160" as="geometry" />
         </mxCell>
       </root>
